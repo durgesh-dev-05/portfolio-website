@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Durgesh Shukla · Portfolio</title>
+  <!-- Google Fonts: Space Grotesk, Inter, JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Animated Grid Network Background -->
+  <div id="grid-bg">
+    <canvas id="gridCanvas"></canvas>
+  </div>
+  
+  <!-- Floating Orbs -->
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+
+  <!-- FIXED GLASS NAV -->
+  <nav>
+    <div class="logo">Durgesh<span style="color:var(--cyan);">.</span></div>
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <a href="#contact" class="hire-btn"><i class="fas fa-handshake"></i> Hire Me</a>
+    </div>
+  </nav>
+
+  <div class="container">
+
+    <!-- HERO (Image Style) -->
+    <section id="home" class="hero fade-up visible">
+      <div class="circuit-bg">
+        <svg viewBox="0 0 800 600" preserveAspectRatio="none">
+          <path class="trace" d="M50,300 L150,300 L150,200 L250,200 L250,350 L350,350 L350,150 L450,150 L450,400 L550,400 L550,250 L650,250 L650,100 L750,100" stroke="var(--cyan)" stroke-width="2" fill="none" opacity="0.4"/>
+          <path class="trace" d="M100,500 L200,500 L200,400 L300,400 L300,500 L400,500 L400,300 L500,300 L500,450 L600,450 L600,200 L700,200" stroke="var(--violet)" stroke-width="1.5" fill="none" opacity="0.3" style="animation-delay: 2s;"/>
+          <circle cx="50" cy="300" r="4" fill="var(--cyan)" opacity="0.6"/>
+          <circle cx="250" cy="200" r="4" fill="var(--cyan)" opacity="0.6"/>
+          <circle cx="450" cy="150" r="4" fill="var(--violet)" opacity="0.6"/>
+          <circle cx="650" cy="250" r="4" fill="var(--cyan)" opacity="0.6"/>
+          <circle cx="750" cy="100" r="4" fill="var(--violet)" opacity="0.6"/>
+          <circle cx="100" cy="500" r="4" fill="var(--violet)" opacity="0.6"/>
+          <circle cx="400" cy="300" r="4" fill="var(--cyan)" opacity="0.6"/>
+          <circle cx="600" cy="450" r="4" fill="var(--violet)" opacity="0.6"/>
+        </svg>
+      </div>
+
+      <div class="hero-content">
+        <div class="greeting">Hi, I'm</div>
+        <h1><span class="highlight">Durgesh</span> Shukla.</h1>
+        <p class="intro-text">B.Tech CS student focused on building innovative software solutions and sharpening problem-solving skills through DSA, Python and AI/ML.</p>
+        
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary"><i class="fas fa-arrow-right"></i> View Projects</a>
+          <a href="#contact" class="btn btn-outline">Contact Me</a>
+          <a href="Durgesh_Shukla_Resume.pdf" download class="btn btn-outline">Resume</a>
+        </div>
+
+        <div class="hero-tags">
+          <span class="tag"><i class="fab fa-python"></i> Python</span>
+          <span class="tag"><i class="fas fa-brain"></i> AI/ML</span>
+          <span class="tag"><i class="fas fa-code"></i> Frontend</span>
+          <span class="tag badge-year"><span class="num">3rd</span> Year B.Tech CS Student</span>
+          <span class="tag"><i class="fas fa-robot"></i> AI/ML Enthusiast</span>
+        </div>
+      </div>
+
+      <div class="profile-pic">
+        <img src="durgesh.jpg" alt="Durgesh Shukla" />
+      </div>
+    </section>
+
+    <!-- ABOUT BENTO -->
+    <section id="about" class="fade-up" style="margin-top: 2rem;">
+      <h2 class="section-title"><span class="accent-line"></span>About</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>I'm a third-year B.Tech Computer Science student passionate about turning ideas into working software. My focus is on <strong>Python development</strong>, <strong>Machine Learning</strong>, <strong>Web Development</strong> and <strong>DSA</strong>. I enjoy breaking down hard problems, writing clean code and continuously learning new tools that help me grow as an engineer.</p>
+          <ul>
+            <li><i class="fas fa-code"></i> 10+ Mini Projects</li>
+            <li><i class="fas fa-cogs"></i> 6+ Core Skills</li>
+            <li><i class="fas fa-lightbulb"></i> 8+ Curiosity</li>
+          </ul>
+          <div class="about-current">
+            <p><i class="fas fa-search"></i> Pursuing B.Tech CS (3rd Year)</p>
+            <p><i class="fas fa-link"></i> Deepening Python expertise</p>
+            <p><i class="fas fa-flask"></i> Exploring ML algorithms</p>
+            <p><i class="fas fa-calendar-alt"></i> Practicing DSA daily</p>
+          </div>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card"><span class="number">10+</span><br /><span class="label-mono">Projects</span></div>
+          <div class="stat-card"><span class="number">6+</span><br /><span class="label-mono">Skills</span></div>
+          <div class="stat-card"><span class="number">60</span><br /><span class="label-mono">Curiosity</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="fade-up" style="margin-top: 4rem;">
+      <h2 class="section-title"><span class="accent-line"></span>Skills</h2>
+      <div class="skills-wrapper">
+        <div class="skill-item"><i class="fab fa-python"></i><div class="skill-name">Python</div><div class="skill-bar"><div class="fill" style="width:85%"></div></div></div>
+        <div class="skill-item"><i class="fas fa-brain"></i><div class="skill-name">Machine Learning</div><div class="skill-bar"><div class="fill" style="width:70%"></div></div></div>
+        <div class="skill-item"><i class="fab fa-html5"></i><div class="skill-name">HTML</div><div class="skill-bar"><div class="fill" style="width:90%"></div></div></div>
+        <div class="skill-item"><i class="fab fa-css3-alt"></i><div class="skill-name">CSS</div><div class="skill-bar"><div class="fill" style="width:85%"></div></div></div>
+        <div class="skill-item"><i class="fab fa-github"></i><div class="skill-name">Git & GitHub</div><div class="skill-bar"><div class="fill" style="width:75%"></div></div></div>
+        <div class="skill-item"><i class="fas fa-code"></i><div class="skill-name">DSA / Problem Solving</div><div class="skill-bar"><div class="fill" style="width:75%"></div></div></div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="fade-up" style="margin-top: 4rem;">
+      <h2 class="section-title"><span class="accent-line"></span>Services</h2>
+      <div class="services-grid">
+        <div class="service-card"><i class="fas fa-robot"></i><h4>ML Solutions</h4><p>Models for classification, prediction & data-driven insights using Python.</p></div>
+        <div class="service-card"><i class="fas fa-terminal"></i><h4>Python Development</h4><p>Clean scripts, automation utilities, and data tooling.</p></div>
+        <div class="service-card"><i class="fas fa-globe"></i><h4>Frontend Development</h4><p>Responsive, accessible interfaces with HTML, CSS & modern frameworks.</p></div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="fade-up" style="margin-top: 4rem;">
+      <h2 class="section-title"><span class="accent-line"></span>Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <h4>BMI Calculator</h4>
+          <p>Real-time BMI calculator with clean UI and instant feedback.</p>
+          <div class="tech"><span>HTML</span><span>CSS</span><span>Bootstrap</span></div>
+        </div>
+        <div class="project-card">
+          <h4>Portfolio Website</h4>
+          <p>Modern portfolio showcasing skills, services, projects & contact.</p>
+          <div class="tech"><span>React</span><span>TypeScript</span><span>Tabbed</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="fade-up" style="margin-top: 4rem;">
+      <h2 class="section-title"><span class="accent-line"></span>Contact</h2>
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <p><i class="fas fa-envelope"></i> <a href="mailto:shukladurgesh2006@gmail.com">shukladurgesh2006@gmail.com</a></p>
+          <p><i class="fas fa-phone-alt"></i> <a href="tel:+918429119055">+91 84291 19055</a></p>
+          <p><i class="fab fa-linkedin"></i> <a href="#">linkedin.com/in/durgesh-shukla5</a></p>
+          <p><i class="fab fa-github"></i> <a href="https://github.com/durgesh-dev-05" target="_blank">github.com/durgesh-dev-05</a></p>
+          <p><i class="fas fa-map-marker-alt"></i> Paranupur, Kunda, Pratapgarh, UP</p>
+        </div>
+        <form id="contact-form" class="contact-form">
+          <input type="text" name="name" placeholder="Your name" required />
+          <input type="email" name="email" placeholder="Email" required />
+          <input
+              type="tel"
+              name="phone"
+              placeholder="Phone Number"
+              pattern="[0-9]{10}"
+              maxlength="10"
+              required/>
+          <textarea name="message" rows="3" placeholder="Message" required></textarea>
+          <button type="submit" class="btn btn-primary" style="border:none; width:100%;"><i class="fas fa-paper-plane"></i> Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2026 Durgesh Shukla · built with <i class="fas fa-heart" style="color: var(--cyan);"></i> & curiosity</p>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+  <!-- Grid Network Animation -->
+
+
+  <!-- scroll observer -->
+<script src="script.js" defer></script>
+</body>
+</html>
